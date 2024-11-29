@@ -53,12 +53,3 @@ The most significant features contributing to the classification task are identi
 The model achieves high accuracy in predicting the six activities, demonstrating the effectiveness of the chosen features and model. This project highlights the potential of sensor data and machine learning in activity recognition tasks.  
 
 ---
-
-## Tools and Libraries Used  
-- **Python**  
-- **Pandas** for data manipulation  
-- **NumPy** for numerical operations  
-- **scikit-learn** for model training and evaluation  
-- **Matplotlib** and **Seaborn** for data visualization  
-
----
