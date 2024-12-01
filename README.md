@@ -1,6 +1,75 @@
+# Employee Security System
+
+## Overview
+
+This project implements a **contactless employee check-in system** for Stark Industries, leveraging **smartphone sensor data** and **machine learning** for secure and seamless access control. The system replaces physical keycards with a smartphone-based gait analysis approach, ensuring enhanced security and convenience.
+
+### Problem Statement
+
+Currently, employees use physical keycards to access the building. However, this system is susceptible to:
+
+- Loss or theft of keycards.
+- Unauthorized access through stolen or cloned keycards.
+
+To address these issues, this project proposes a machine-learning-based solution using **gait analysis**, which is unique to each individual, to authenticate employees.
+
+---
+
+## Features
+
+- **Contactless Authentication**: Utilizes accelerometer data from employees' smartphones.
+- **Gait Analysis**: Compares real-time gait patterns with historical patterns stored on the server.
+- **Automated Access Control**: If the gait pattern matches, the system automatically opens the door for the employee.
+
+---
+
+## System Workflow
+
+1. **Data Capture**: Employee's smartphone collects accelerometer data when entering the firm's premises.
+2. **Data Transmission**: The smartphone sends the sensor data to the server.
+3. **Pattern Analysis**: 
+   - The server runs machine learning algorithms to analyze the received gait pattern.
+   - Compares the pattern with the employee's historical gait data stored in the system.
+4. **Decision**: 
+   - If there is a match, access is granted, and the doors open.
+   - If not, the employee is denied access.
+5. **Feedback**: The system logs all successful and unsuccessful access attempts for auditing purposes.
+
+---
+
+## Technologies Used
+
+- **Smartphone Sensors**: Accelerometer for gait data collection.
+- **Machine Learning Algorithms**: For gait pattern analysis and authentication.
+- **Server-Side Programming**: For data processing and decision-making.
+- **Database**: To store employees' historical gait patterns securely.
+
+---
+
+## Prerequisites
+
+- **Hardware**: Smartphones with accelerometers.
+- **Software**:
+  - Python (for ML models)
+  - Flask/Django (for server API)
+  - SQLite/PostgreSQL (for database storage)
+- **Development Environment**:
+  - Android/iOS for smartphone integration.
+  - Machine Learning libraries: scikit-learn, TensorFlow/PyTorch.
+
+---
+
+## Installation
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/username/employee-security-system.git
+   cd employee-security-system
+
+
 # Human Activity Recognition (HAR) Using Smartphones  
 
-## Project Overview  
+## Overview
 This project involves the implementation of a machine learning model to perform **Human Activity Recognition (HAR)** using data collected from the accelerometer and gyroscope sensors of smartphones. The dataset used is the **UCI HAR Dataset**, which contains raw inertial sensor signals as well as precomputed time-domain and frequency-domain features for six different physical activities:  
 
 - Walking  
